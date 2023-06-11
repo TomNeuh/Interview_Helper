@@ -1,0 +1,13 @@
+docx2txt
+streamlit
+pandas
+numpy
+os
+re
+nlt.tkoenize
+base64
+requests
+openai
+tdqm
+time
+docx
