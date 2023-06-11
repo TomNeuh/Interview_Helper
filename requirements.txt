@@ -1,6 +1,2 @@
 docx2txt
-streamlit
 openai
-tdqm
-time
-docx
