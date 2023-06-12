@@ -11,7 +11,7 @@ import openai
 from tqdm import tqdm
 import time
 
-nltk.download('punkt')
+nltk.download('all')
 
 from nltk.tokenize import sent_tokenize
 
