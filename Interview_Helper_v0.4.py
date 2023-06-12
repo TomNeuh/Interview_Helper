@@ -343,15 +343,17 @@ if clicked:
                     #Create a link to download the excel file: 
                     st.markdown(get_binary_file_downloader_html(output_file_4, 'Intial_Data_Structure'), unsafe_allow_html=True)
                 
-                except:
+                except Exception as e:
                     st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
+                    print(e)
 
-            except:
+            except Exception as e::
                 st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
+                print(e)
 
-        except:
+        except Exception as e::
             st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
-
+            print(e)
 
     else:
         st.write("Cannot start analyis, missing required inputs or wrong inputs provided.")
