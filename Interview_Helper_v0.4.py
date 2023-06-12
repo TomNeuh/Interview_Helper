@@ -345,14 +345,17 @@ if clicked:
                     st.markdown(get_binary_file_downloader_html(output_file_4, 'Intial_Data_Structure'), unsafe_allow_html=True)
                 
                 except Exception as e:
+                    st.error(e)
                     st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
                     print(e)
 
             except Exception as e:
+                st.error(e)
                 st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
                 print(e)
 
         except Exception as e:
+            st.error(e)
             st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
             print(e)
 
