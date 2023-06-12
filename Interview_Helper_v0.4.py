@@ -347,11 +347,11 @@ if clicked:
                     st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
                     print(e)
 
-            except Exception as e::
+            except Exception as e:
                 st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
                 print(e)
 
-        except Exception as e::
+        except Exception as e:
             st.error("An error occured. This could be because OpenAI is currently overloaded. Please try again later.")
             print(e)
 
