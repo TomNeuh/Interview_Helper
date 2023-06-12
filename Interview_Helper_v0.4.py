@@ -10,7 +10,6 @@ import requests
 import openai
 from tqdm import tqdm
 import time
-import docx
 
 st.title("Expert & Research Interview Helper")
 st.write("This is a tool to analyze your research or expert interviews. You can upload your interview transcripts and it will automatically generate interview insights (1) for parts of each interview seperated, (2) for each interview combined and (3) develop an initial data structure based on the Gioia (2004) structure. The tool uses the OpenAI API to generate the insights. If you have question, please feel free to reach out to: https://www.linkedin.com/in/niklas-geiss/")
@@ -150,8 +149,6 @@ if clicked:
                     )
 
                     response_text = completion2.choices[0].message.content
-                    # This is optional but it's nice to see how the reviews are being summarized to make sure something isn't wrong with the input file or API results
-                    print(response_text)
                     
                     # This is our quality control check. If the API has an error and doesn't generate a summary, we will retry the review 3 times. 
                     if response_text:
