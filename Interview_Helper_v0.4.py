@@ -152,6 +152,8 @@ if clicked:
 
                     response_text = completion2.choices[0].message.content
                     
+                    print('Conducting analysis...')
+                    
                     # This is our quality control check. If the API has an error and doesn't generate a summary, we will retry the review 3 times. 
                     if response_text:
                         summary = response_text
