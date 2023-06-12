@@ -10,6 +10,7 @@ import requests
 import openai
 from tqdm import tqdm
 import time
+from nltk.tokenize import sent_tokenize
 nltk.download('all')
 
 st.title("Expert & Research Interview Helper")
