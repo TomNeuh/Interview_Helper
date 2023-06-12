@@ -114,9 +114,10 @@ if clicked:
         st.info("Interview transcripts have been successfully uploaded and converted to text. Please wait while the analysis is being performed. This may take a few minutes. Please do not refresh the page or close the browser window.")
         
         #Lets loop through the transcripts now and always add the respective interview and part number (e.g. Interview 1 - Part 1:) to the beginning of each transcript in the dataframe:
+        string_to_save = ''
         for i in range(len(df_transcripts["Transcript"])):
-            df_transcripts["Transcript"][i] = "Interview "+str(df_transcripts["Interview_Number"][i])+" - Part "+str(df_transcripts["Part_Number"][i])+": "+df_transcripts["Transcript"][i]
-
+            string_to_save = "Interview "+str(df_transcripts["Interview_Number"][i])+" - Part "+str(df_transcripts["Part_Number"][i])+": "+df_transcripts["Transcript"][i]
+            df_transcripts["Transcript"][i] = string_to_save
         #Lets now create a list of the transcripts for each interview:
         interview_transcripts = []
         #Loop through each interview in the transcripts list:
