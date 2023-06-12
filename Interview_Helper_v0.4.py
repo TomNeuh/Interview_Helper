@@ -11,7 +11,7 @@ import openai
 from tqdm import tqdm
 import time
 from nltk.tokenize import sent_tokenize
-nltk.download('all')
+
 
 st.title("Expert & Research Interview Helper")
 st.write("This is a tool to analyze your research or expert interviews. You can upload your interview transcripts and it will automatically generate interview insights (1) for parts of each interview seperated, (2) for each interview combined and (3) develop an initial data structure based on the Gioia (2004) structure. The tool uses the OpenAI API to generate the insights. If you have question, please feel free to reach out to: https://www.linkedin.com/in/niklas-geiss/")
